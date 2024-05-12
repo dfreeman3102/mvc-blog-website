@@ -1,8 +1,6 @@
 [
     {
-        "id": 1,
         "title": "Test",
-        "content":"Test blog, hopefully you can see me",
-        "user_id": 1
+        "content":"Test blog, hopefully you can see me"
     }
 ]
