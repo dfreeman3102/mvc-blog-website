@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Blog, User } = require('../models');
 const authorize = require('../utils/auth.js');
 
-router.get('/', authorize, async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     // Get all blogs with name of writer
     const blogData = await Blog.findAll({
