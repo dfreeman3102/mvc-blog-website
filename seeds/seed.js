@@ -1,5 +1,5 @@
 //adding sequelize and adding access to the models folder
-const sequelize = require('sequelize');
+const sequelize = require('../config/connection.js');
 const {User, Blog} = require('../models');
 //adding both .json folders to get the seed data from
 const userData = require('./userData.json');
