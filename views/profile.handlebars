@@ -2,7 +2,7 @@
     <h2>Welcome {{name}}!</h2>
 
     <h3>Create a new blog-post:</h3>
-    <form>
+    <form class="new-blog-form">
         <div class="form-group">
             <label for="blog-title">Blog Title:</label>
             <input class="form-input" type="text" id="blog-title" name="blog-title">
@@ -16,6 +16,7 @@
       </div>
     </form>
     {{#if blogs.length}}
+    <div class="blog-list">
     <h3>Previous Submitted Posts</h3>
     {{#each blogs as |blog|}}
     <div>
@@ -27,5 +28,8 @@
         </div>
     </div>
     {{/each}}
+    </div>
     {{/if}}
 </div>
+
+<script src="./js/profile.js"></script>
