@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const { Blog } = require('../../models');
-//add authentication later
+const authorize = require('../../utils/auth.js');
 
-router.post('/', async (req, res) => {
+router.post('/', authorize, async (req, res) => {
     try{
         const newBlog = await Blog.create({
             ...req.body,
@@ -14,7 +14,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-router.delete('/:id', async (req,res) => {
+router.delete('/:id', authorize, async (req,res) => {
     try{
         const blogData = await Blog.destroy({
             where:{
