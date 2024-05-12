@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "name": "Bob Jones",
+        "email":"bob@gmail.com",
+        "password":"password123",
+        "blog_id": 1
+    }
+]
