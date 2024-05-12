@@ -35,6 +35,13 @@ User.init(
             validate:{
                 len: [8],
             }
+        },
+        blog_id:{
+            type:DataTypes.STRING,
+            references:{
+                model:'blog',
+                key:'id'
+            }
         }
     },
     {
