@@ -19,25 +19,25 @@ const newBlogHandler = async (event) => {
     }
 };
 
-const commentHandler = async (event) => {
-    event.preventDefault();
+// const commentHandler = async (event) => {
+//     event.preventDefault();
 
-    const comment = document.querySelector('#blog-comment').value.trim();
+//     const comment = document.querySelector('#blog-comment').value.trim();
     
-    if(comment){
-        const response = await fetch('/api/blog/comment', {
-            method:'POST',
-            body:JSON.stringify({comment}),
-            headers:{'Content-Type': 'application/json'}
-        });
+//     if(comment){
+//         const response = await fetch('/api/blog/comment', {
+//             method:'POST',
+//             body:JSON.stringify({comment}),
+//             headers:{'Content-Type': 'application/json'}
+//         });
 
-        if(response.ok){
-            document.location.replace('/profile');
-        } else {
-            alert('Failed to post comment.')
-        }
-    }
-};
+//         if(response.ok){
+//             document.location.replace('/profile');
+//         } else {
+//             alert('Failed to post comment.')
+//         }
+//     }
+// };
 
 const deleteHandler = async (event) => {
     if(event.target.hasAttribute('data-id')){
@@ -57,6 +57,6 @@ const deleteHandler = async (event) => {
 
 document.querySelector('.new-blog-form').addEventListener('submit', newBlogHandler);
 
-document.querySelector('.comment-form').addEventListener('submit', commentHandler);
+// document.querySelector('.comment-form').addEventListener('submit', commentHandler);
 
 document.querySelector('.blog-list').addEventListener('click', deleteHandler);
