@@ -9,15 +9,16 @@ Comment.init(
             type: DataTypes.INTEGER,
             autoIncrement:true,
             allowNull:false,
+            primaryKey:true
         },
         user_comments:{
             type:DataTypes.STRING,
             allowNull:true
         },
-        user_id:{
+        blog_id:{
             type:DataTypes.INTEGER,
             references:{
-                model:'user',
+                model:'blog',
                 key:'id'
             }
         }

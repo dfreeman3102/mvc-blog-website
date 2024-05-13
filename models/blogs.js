@@ -19,13 +19,6 @@ Blog.init(
             type: DataTypes.STRING,
             allowNull:false,
         },
-        comments:{
-            type:DataTypes.STRING,
-            references:{
-                model:'blog',
-                key:"user_comments"
-            }
-        },
         user_id:{
             type:DataTypes.INTEGER,
             references:{
