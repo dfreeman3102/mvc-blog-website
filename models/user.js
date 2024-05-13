@@ -7,7 +7,7 @@ const sequelize = require('../config/connection.js');
 
 class User extends Model {
     checkPassword(loginPassword) {
-        return bcrypt.compareSync(loginPassword, this.password);
+        return bcrypt.compare(loginPassword, this.password);
     }
 }
 //added user table structure
