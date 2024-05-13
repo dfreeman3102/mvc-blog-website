@@ -3,3 +3,11 @@
     <p>{{content}}</p>
     <p>Written By: {{user.name}}</p>
 </div>
+{{#if comments.length}}
+{{#each}}
+<div>
+    <p>{{comments}}</p>
+    <p>Written By: {{user.name}}</p>
+</div>
+{{/each}}
+{{/if}}
