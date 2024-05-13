@@ -3,6 +3,16 @@
     <p>{{content}}</p>
     <p>Written By: {{user.name}}</p>
 </div>
+<h3>Add a Comment:</h3>
+    <form class="comment-form">
+        <div class="form-group">
+            <label for="blog-comment">Comment:</label>
+            <input class="form-input" type="text" id="blog-comment" name="blog-comment">
+        </div>
+        <div class="form-group">
+        <button type="submit" class="btn btn-primary">Comment</button>
+      </div>
+    </form>
 {{#if comments.length}}
 {{#each}}
 <div>
