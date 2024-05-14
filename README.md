@@ -7,7 +7,7 @@ view a previously submitted one, or delete an old post. When you click on viewin
 to leave a comment on the post. When idle on the site for more than a set time, you are able to view posts and comments, but you must sign in before
 you can alter the pages again.
 
-Here is the link to the deployed application:
+Here is the link to the deployed application: https://mvc-blog-website-dfreeman-7df0bd050636.herokuapp.com/
 
 Here is the link to the GitHub Repo: https://github.com/dfreeman3102/mvc-blog-website
 
